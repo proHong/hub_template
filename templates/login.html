@@ -30,11 +30,11 @@
       {{login_error}}
     </p>
     {% endif %}
-    <div class="info" hidden>
-      <label for="username_input" hidden>Username:</label>
+    <div class="info" style="display:none">
+      <label for="username_input">Username:</label>
       <input
         id="username_input"
-        type="hidden"
+        type="text"
         autocapitalize="off"
         autocorrect="off"
         class="form-control"
@@ -42,11 +42,10 @@
         val="{{username}}"
         tabindex="1"
         autofocus="autofocus"
-        
       />
-      <label for='password_input' hidden>Password:</label>
+      <label for='password_input'>Password:</label>
       <input
-        type="hidden"
+        type="password"
         class="form-control"
         name="password"
         id="password_input"
